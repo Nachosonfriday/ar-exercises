@@ -10,3 +10,19 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+# class Employee < ApplicationRecord
+  
+# end
+
+# class Store < ApplicationRecord
+  
+# end
+
+puts "Please name a store"
+store_name = gets.chomp
+
+new_store = Store.create(name: store_name)
+
+puts "Store name #{new_store.errors[:name][0]}"
+    
+  
